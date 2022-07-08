@@ -1,0 +1,57 @@
+.container {
+    border: 2px solid black;
+    height: 70vh;
+    width: 28%;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+
+  header{
+    text-align: center;
+    padding: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 2px solid red;
+    font-size: xx-large;
+  }
+
+.title {
+    margin: 20px;
+    text-align: center;
+    text-transform: capitalize;
+   
+}
+
+.sub-header{
+    padding: 10px;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.inputt {
+  width: 60%;
+  margin-top: 90px;
+  margin-left: 20%;
+}
+
+.zipcode{
+  width: 60%;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+button {
+  width: 50%;
+  padding: 15px;
+  margin-left: 25%;
+  margin-top: 20%;
+ background-color: red;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+
+button:hover{
+  background-color: whitesmoke;
+  color: red;
+}

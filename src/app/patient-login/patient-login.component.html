@@ -1,0 +1,51 @@
+<div class="container">
+  <header>Adedotun Hospital</header>
+  <div class="title">Hi there, let confirm it's you</div>
+  <div class="sub-header">
+    Enter Your Date of Birth, and your Zip Code. To check in
+  </div>
+  <form>
+    <mat-form-field [appearance]="'fill'" class="inputt">
+      <mat-label>Patient's Date Of Birth</mat-label>
+      <input
+        matInput
+        [formControl]="dobControl"
+        type="tel"
+        placeholder="mm-dd-yyyy"
+      />
+      <mat-error *ngIf="dobControl.errors?.['required']"
+        >Enter Your Date of Brith</mat-error
+      >
+      <mat-error *ngIf="dobControl.errors?.['pattern']"
+        >Enter only Numbers</mat-error
+      >
+      <mat-error *ngIf="dobControl.errors?.['dobExists']"
+        >DOB does not exist</mat-error
+      >
+    </mat-form-field>
+  </form>
+
+  <form>
+    <mat-form-field [appearance]="'fill'" class="zipcode">
+      <mat-label>Patient's Zipcode(5 digit)</mat-label>
+      <input
+        matInput
+        [formControl]="zipcodeControl"
+        type="tel"
+        placeholder="5 digit Zipcode"
+      />
+      <mat-error *ngIf="dobControl.errors?.['required']"
+        >Enter Your Zipcode</mat-error
+      >
+      <mat-error *ngIf="dobControl.errors?.['pattern']"
+        >Enter only Numbers</mat-error
+      >
+      <mat-error *ngIf="dobControl.errors?.['dobExists']"
+        >DOB does not exist</mat-error
+      >
+    </mat-form-field>
+  </form>
+
+  <button>Continue</button>
+
+</div>
